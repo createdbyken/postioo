@@ -6,6 +6,7 @@ ruby '3.1.2'
 gem 'bootsnap',        '1.12.0', require: false
 gem 'importmap-rails', '1.1.0'
 gem 'jbuilder',        '2.11.5'
+gem 'pg'
 gem 'puma',            '5.6.4'
 gem 'rails', '~> 7.0.4'
 gem 'sassc-rails',     '2.1.2'
@@ -31,10 +32,6 @@ group :test do
   gem 'rails-controller-testing', '1.0.5'
   gem 'selenium-webdriver',       '4.2.0'
   gem 'webdrivers',               '5.0.0'
-end
-
-group :production do
-  gem 'pg', '1.2.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
